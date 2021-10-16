@@ -23,6 +23,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': ['error'],
     'import/extensions': ['error', 'ignorePackages', { ts: 'never', tsx: 'never' }],
     'class-methods-use-this': ['off'],
+    'arrow-body-style': ['error', 'always'],
     camelcase: ['off'],
   },
   settings: {

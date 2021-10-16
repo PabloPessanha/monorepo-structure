@@ -9,5 +9,4 @@ app.get('/', (_req, res) => {
   return res.status(200).json({ message: 'ok' });
 });
 
-
 app.listen(3333);

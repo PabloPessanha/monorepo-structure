@@ -1,0 +1,7 @@
+{
+  "name": "mono-repo-structure",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Pablo Pessanha <pablopessanh@gmail.com>",
+  "license": "MIT"
+}

@@ -11,6 +11,7 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
+  devtool: false,
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
   module: {
     rules: [
@@ -33,6 +34,15 @@ module.exports = {
     port: 4444,
   },
   optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
     minimize: !isDevelopment,
     minimizer: [
       new TerserPlugin({
@@ -57,7 +67,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
   },
   plugins: [
     new HtmlWebpackPlugin({

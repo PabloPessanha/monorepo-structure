@@ -5,9 +5,9 @@
   "author": "Pablo Pessanha <pablopessanh@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "install:all": "npm i && npx lerna clean -y && npm run remove:cache && lerna bootstrap --hoist",
+    "install:all": "npm i && lerna clean -y && npm run remove:cache && lerna bootstrap --hoist",
     "remove:cache": "rm -rf ./packages/**/package-lock.json",
-    "start:dev": "npx lerna run start:dev"
+    "start:dev": "lerna run start:dev"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",

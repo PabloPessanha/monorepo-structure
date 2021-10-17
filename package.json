@@ -5,8 +5,8 @@
   "author": "Pablo Pessanha <pablopessanh@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "install:all": "npm i && npx lerna clean -y && npm run remove:packages && lerna bootstrap --hoist",
-    "remove:packages": "rm -rf ./packages/**/package-lock.json",
+    "install:all": "npm i && npx lerna clean -y && npm run remove:cache && lerna bootstrap --hoist",
+    "remove:cache": "rm -rf ./packages/**/package-lock.json",
     "start:dev": "npx lerna run start:dev"
   },
   "devDependencies": {

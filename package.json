@@ -2,15 +2,14 @@
   "name": "monorepo-structure",
   "version": "1.0.0",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
   "author": "Pablo Pessanha <pablopessanh@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "install:all": "npm i && npx lerna clean -y && npm run remove:packages && lerna bootstrap --hoist",
+    "remove:packages": "rm -rf ./packages/**/package-lock.json",
+    "start:dev": "npx lerna run start:dev"
+  },
   "devDependencies": {
-    "typescript": "^4.4.4",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^8.0.1",
@@ -21,6 +20,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "lerna": "^4.0.0",
+    "typescript": "^4.4.4"
   }
 }

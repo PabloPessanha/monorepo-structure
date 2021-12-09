@@ -4,7 +4,8 @@
   "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "preinstall": "rm -rf dist",
+    "build": "tsc",
     "start:dev": "ts-node-dev --inspect --transpile-only --ignore node_modules src/server.ts",
     "start:prod": "node dist/server.js"
   },

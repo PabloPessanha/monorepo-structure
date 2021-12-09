@@ -2,12 +2,11 @@
 
 Fiz este repositório com o intuito de reaproveitar uma estrutura para projetos fullstack, fazendo somente as configurações que acredito que são essenciais para todos os projetos em Typescript.
 
-Pretendo adicionar futuramente:
+Pretendo adicionar futuramente automações de:
 
-- Automações de:
-  - [ ] Estilização com husky e lint-staged;
-- [ ] Hooks para CI/CD;
-  - [ ] Testes unitários e de integração na branch de um PR; 
+- [ ] Estilização com husky e lint-staged;
+- [ ] CI/CD com GitHub Actions:
+  - [ ] Testes unitários e de integração na branch de uma nova PR;
 - [ ] Integração de estrutura Mobile;
 
 ## Modo de usar

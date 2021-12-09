@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  frontend:
+    container_name: project-front
+    build:
+      context: ./packages/frontend
+      dockerfile: Dockerfile
+    ports:
+      - 4444:4444

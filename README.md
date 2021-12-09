@@ -4,12 +4,10 @@ Fiz este repositório com o intuito de reaproveitar uma estrutura para projetos 
 
 Pretendo adicionar futuramente:
 
-- [ ] Scripts para atualização de dependencias, inicialização do projeto..;
 - Automações de:
   - [ ] Estilização com husky e lint-staged;
-  - [ ] Testes unitários e de integração ao pre-push com husky;
-  - [ ] Automação de build com Docker e docker-compose;
 - [ ] Hooks para CI/CD;
+  - [ ] Testes unitários e de integração na branch de um PR; 
 - [ ] Integração de estrutura Mobile;
 
 ## Modo de usar

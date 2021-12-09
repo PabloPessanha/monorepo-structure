@@ -7,6 +7,7 @@ Pretendo adicionar futuramente automações de:
 - [ ] Estilização com husky e lint-staged;
 - [ ] CI/CD com GitHub Actions:
   - [ ] Testes unitários e de integração na branch de uma nova PR;
+  - [ ] Garantia de qualidade antes da realização de um merge;
 - [ ] Integração de estrutura Mobile;
 
 ## Modo de usar

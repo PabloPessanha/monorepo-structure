@@ -75,4 +75,7 @@ module.exports = {
     }),
     isDevelopment && new ReactRefreshWebpackPlugin(),
   ].filter(Boolean),
+  performance: {
+    hints: false,
+  },
 };
